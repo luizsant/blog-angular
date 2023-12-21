@@ -1,0 +1,15 @@
+.title-card {
+  background-color: #f2f2f2; /* Cor de fundo do card */
+  padding: 50px;
+  text-align: center;
+  margin: 0;
+}
+
+.title-card h1 {
+  font-size: 98px; /* Tamanho da fonte */
+  text-transform: uppercase; /* Transforma o texto em caixa alta */
+  margin: 0;
+  color: #333; /* Cor do texto */
+  word-spacing: 15px;
+  letter-spacing: 10px;
+}

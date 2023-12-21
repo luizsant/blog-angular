@@ -1,0 +1,6 @@
+.big-card {
+  flex: 2; /* Ocupa 2/3 do espaço */
+  padding: 20px;
+  margin-right: 20px;
+  background-color: aquamarine;
+}
