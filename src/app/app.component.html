@@ -1,18 +1,2 @@
-<app-menu-bar></app-menu-bar>
-<app-menu-title></app-menu-title>
-<div class="content">
-  <div class="main-section">
-    <app-big-card
-      [newsTitle]="latestNews.title"
-      [newsContent]="latestNews.content"
-    ></app-big-card>
-    <div class="small-cards">
-      <app-small-card
-        *ngFor="let newsItem of newsItems"
-        [title]="newsItem.title"
-        [summary]="newsItem.summary"
-      ></app-small-card>
-    </div>
-  </div>
-</div>
+<app-home></app-home>
 <router-outlet></router-outlet>

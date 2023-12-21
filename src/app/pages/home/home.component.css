@@ -1,0 +1,9 @@
+.meu-container {
+  display: flex;
+  gap: 20px; /* Espaço entre os cards */
+}
+
+.big-card {
+  width: 66.66%; /* Ajuste a largura do big-card para 2/3 */
+  /* Outras propriedades de estilo do big-card */
+}

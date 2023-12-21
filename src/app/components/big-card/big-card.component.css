@@ -1,0 +1,31 @@
+.small-card {
+  display: flex; /* Habilita Flexbox */
+  align-items: flex-start; /* Alinha itens ao topo */
+  width: 33.33%; /* 1/3 da largura */
+  margin-bottom: 20px; /* Espaço entre os small-cards */
+}
+
+.img-s-card {
+  flex-shrink: 0; /* Evita que a imagem encolha */
+  margin-right: 10px; /* Espaço entre a imagem e o texto */
+}
+
+.img-s-card img {
+  width: 50px; /* Define a largura da imagem */
+  height: 50px; /* Define a altura da imagem */
+}
+
+.text-content {
+  display: flex; /* Habilita Flexbox para o conteúdo de texto */
+  flex-direction: column; /* Organiza o conteúdo em coluna */
+}
+
+.title-s-card {
+  margin: 0; /* Remove margens padrão */
+  font-size: 18px; /* Ajuste o tamanho da fonte */
+}
+
+.description-s-card {
+  font-size: 14px; /* Tamanho da fonte para a descrição */
+  margin-top: 5px; /* Espaço acima da descrição */
+}
