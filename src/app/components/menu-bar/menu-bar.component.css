@@ -1,5 +1,6 @@
 .menu-bar {
   background-color: #333;
+  border-top: #333 2px solid;
   overflow: hidden;
   display: flex;
   justify-content: space-around;

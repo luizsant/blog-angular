@@ -1,9 +1,52 @@
 .meu-container {
   display: flex;
-  gap: 20px; /* Espaço entre os cards */
+  gap: 10px; /* Espaço entre os cards */
+  padding-top: 15px;
+}
+.big-card {
+  display: flex;
+  flex-direction: column; /* Organiza os itens em coluna */
+  align-items: center; /* Centraliza horizontalmente */
+  justify-content: center; /* Centraliza verticalmente */
+  padding: 0 10%;
+
+  width: 60%;
 }
 
-.big-card {
-  width: 66.66%; /* Ajuste a largura do big-card para 2/3 */
-  /* Outras propriedades de estilo do big-card */
+.img-b-card img {
+  width: 800px;
+  height: 400px;
+  margin: auto; /* Centraliza a imagem horizontalmente */
+}
+
+.title-s-card,
+.title-b-card {
+  margin: 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+.description-s-card,
+.description-b-card {
+  font-size: 14px;
+
+  text-align: center; /* Centraliza o texto da descrição */
+}
+.description-s-card {
+  font-size: 14px;
+  margin-top: 5px;
+  text-align: center;
+  white-space: nowrap; /* Impede a quebra de linha */
+  overflow: hidden; /* Oculta o texto que excede o limite da caixa */
+  text-overflow: ellipsis; /* Adiciona reticências quando o texto é cortado */
+  width: 90%; /* Ajuste a largura conforme necessário */
+}
+@media (max-width: 768px) {
+  .big-card,
+  .small-card {
+    width: 100%; /* Faz com que os cartões ocupem toda a largura disponível em tablets */
+  }
+  .meu-container {
+    flex-direction: column; /* Organiza os cartões em coluna para tablets */
+  }
 }

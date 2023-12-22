@@ -1,26 +1,42 @@
+.box {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: start;
+  margin-top: 5px;
+  border-bottom: #333 2px solid;
+}
 .small-card {
-  display: flex; /* Habilita Flexbox */
-  align-items: flex-start; /* Alinha itens ao topo */
-  width: 33.33%; /* 1/3 da largura */
   margin-bottom: 20px; /* Espaço entre os small-cards */
 }
 
+.small-card > a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #333; /* Cor azul, por exemplo */
+  text-decoration: none; /* Remove o sublinhado, se desejado */
+}
 .img-s-card {
   flex-shrink: 0; /* Evita que a imagem encolha */
   margin-right: 10px; /* Espaço entre a imagem e o texto */
 }
 
 .img-s-card img {
-  width: 50px; /* Define a largura da imagem */
-  height: 50px; /* Define a altura da imagem */
+  width: 120px; /* Define a largura da imagem */
+  height: 120px; /* Define a altura da imagem */
 }
 
 .title-s-card {
   margin: 0; /* Remove margens padrão */
+  margin-top: 15px;
   font-size: 18px; /* Ajuste o tamanho da fonte */
 }
 
 .description-s-card {
   font-size: 14px; /* Tamanho da fonte para a descrição */
-  margin-top: 5px; /* Espaço acima da descrição */
+  margin-top: 15px; /* Espaço acima da descrição */
+  height: 25px;
+  width: 100%;
+  flex-grow: 1;
 }

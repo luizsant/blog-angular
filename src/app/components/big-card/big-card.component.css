@@ -1,31 +1,42 @@
-.small-card {
-  display: flex; /* Habilita Flexbox */
-  align-items: flex-start; /* Alinha itens ao topo */
-  width: 33.33%; /* 1/3 da largura */
-  margin-bottom: 20px; /* Espaço entre os small-cards */
+.big-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.big-card > a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #333; /* Cor azul, por exemplo */
+  text-decoration: none; /* Remove o sublinhado, se desejado */
+}
+.boxB {
+  padding-top: 5px;
+  padding-left: 15px;
 }
 
-.img-s-card {
-  flex-shrink: 0; /* Evita que a imagem encolha */
-  margin-right: 10px; /* Espaço entre a imagem e o texto */
+.img-b-card img {
+  width: 800px;
+  height: 400px;
+  align-content: center;
+  margin: auto;
 }
 
-.img-s-card img {
-  width: 50px; /* Define a largura da imagem */
-  height: 50px; /* Define a altura da imagem */
+.title-b-card {
+  margin: 0;
+  font-size: 18px;
+  text-align: left;
+  margin-top: 15px;
 }
 
-.text-content {
-  display: flex; /* Habilita Flexbox para o conteúdo de texto */
-  flex-direction: column; /* Organiza o conteúdo em coluna */
+.description-b-card {
+  font-size: 14px;
+  text-align: justify;
+  margin-top: 15px;
+  padding-right: 20px;
 }
-
-.title-s-card {
-  margin: 0; /* Remove margens padrão */
-  font-size: 18px; /* Ajuste o tamanho da fonte */
-}
-
-.description-s-card {
-  font-size: 14px; /* Tamanho da fonte para a descrição */
-  margin-top: 5px; /* Espaço acima da descrição */
+.description-b-card > p {
+  font-size: 1.5em;
 }

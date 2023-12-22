@@ -3,6 +3,7 @@
   padding: 50px;
   text-align: center;
   margin: 0;
+  border: #333 2px solid;
 }
 
 .title-card h1 {
