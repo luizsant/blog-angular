@@ -2,23 +2,30 @@
 <app-menu-title></app-menu-title>
 <div class="content">
   <div class="meu-container">
-    <div class="big-card">
-      <app-big-card></app-big-card>
+    <!-- home.component.html -->
+<!-- home.component.html -->
+<div class="meu-container">
+  <div class="big-card">
+    <app-big-card
+      [Id]="bigCardData.id"
+      [photoCover]="bigCardData.photoCover"
+      [cardTitle]="bigCardData.title"
+      [cardDescription]="bigCardData.description"
+    ></app-big-card>
+  </div>
+
+  <div class="small-cards-container">
+    <div *ngFor="let card of smallCardsData" class="small-card">
+      <app-small-card
+        [Id]="card.id"
+        [photoCover]="card.photoCover"
+        [cardTitle]="card.title"
+        [cardDescription]="card.description"
+      ></app-small-card>
     </div>
-    <div>
-      <div class="small-card">
-        <app-small-card></app-small-card>
-      </div>
-      <div class="small-card">
-        <app-small-card></app-small-card>
-      </div>
-      <div class="small-card">
-        <app-small-card></app-small-card>
-      </div>
-      <div class="small-card">
-        <app-small-card></app-small-card>
-      </div>
-      <!-- Outros small-cards -->
-    </div>
+  </div>
+</div>
+
+
   </div>
 </div>

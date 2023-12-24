@@ -1,0 +1,33 @@
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.meu-container {
+  width: 100%;
+  max-width: 800px; /* Ajuste conforme necessário */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.big-card {
+  text-align: center;
+  overflow: hidden; /* Previne o vazamento de conteúdo para fora do contêiner */
+  padding: 10px
+}
+.big-card h1, .big-card p {
+  margin: 0; /* Remove margens padrão, se necessário */
+  padding: 5px 0; /* Adiciona um pouco de espaço acima e abaixo do texto */
+  box-sizing: border-box; /* Inclui padding e border na largura e altura total */
+}
+.big-card img {
+  max-width: 100%; /* Limita a largura da imagem a 100% do contêiner */
+  height: auto;    /* Mantém a proporção da imagem */
+  border-radius: 8px;
+  margin: 0 auto;  /* Centraliza a imagem horizontalmente */
+  display: block;  /* Trata a imagem como um bloco */
+}

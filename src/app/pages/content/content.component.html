@@ -1,0 +1,23 @@
+<app-menu-bar></app-menu-bar>
+<app-menu-title></app-menu-title>
+<div class="content">
+  <div class="meu-container">
+    <div class="big-card">
+      <button [routerLink]="'/'">Voltar para Home</button>
+
+
+      <!-- content.component.html -->
+<div *ngIf="contentTitle || contentDescription || photoCover; else noContent">
+  <div class="article-container">
+    <h1>{{ contentTitle }}</h1>
+    <img *ngIf="photoCover" [src]="photoCover" alt="Imagem da Capa">
+    <p>{{ contentDescription }}</p>
+  </div>
+</div>
+
+<ng-template #noContent>
+  <p>Conteúdo não encontrado ou indisponível.</p>
+</ng-template>
+
+    </div>
+  </div>

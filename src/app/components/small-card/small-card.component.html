@@ -1,15 +1,17 @@
 <div class="box">
   <div class="img-s-card">
-    <img src="https://via.placeholder.com/50x50" alt="" />
+    <a a [routerLink]="['content', Id]">
+      <img src="{{photoCover}}" alt="" />
+    </a>
   </div>
   <div class="small-card">
-    <a href="#">
+    <a a [routerLink]="['content', Id]">
       <div class="text-content">
         <div class="title-s-card">
-          <h1>TÍTULO DO TEXTO</h1>
+          <h1>{{cardTitle}}</h1>
         </div>
         <div class="description-s-card">
-          <p>Lorem ipsum dolor sit amet...</p>
+          <p>{{cardDescription}}</p>
         </div>
       </div>
     </a>
